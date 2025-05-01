@@ -1,16 +1,27 @@
-*{
+body{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Source',Arial,sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+footer{
+  padding: 0;
+    margin: 0;
+  width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
  .nav-items  {
    display: flex;
  
    & li {
-    list-style: none;
-    padding: 5px 10px; 
+            display: flex;
+              align-items: center;
+              list-style: none;
+              padding: 5px 10px;
     
 }
 
@@ -53,7 +64,7 @@ a{
 .asd{ 
    list-style: none;
   display: inline-block;
-  padding: 30px 10px;
+  padding: 30px;
 }
 
 a#Works {
@@ -81,7 +92,7 @@ a#Works:hover {
   justify-content: center;
   width: 50%;
   font-size: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 5px;
 }
 .danger{
 
@@ -124,10 +135,11 @@ position: relative;
   color: #7e7e88;
 }
 h3.multi-tool {
+  margin-top: -50px;
   font-weight: 50;
   text-align: center;
   font-size: 70px;
-  padding-bottom: 20px;
+  
 }
 .img-multi img{
   margin: auto;
@@ -144,7 +156,7 @@ h3.multi-tool {
   display: flex
 ;
   flex-direction: row;
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 .box-2-3-1 {
@@ -171,12 +183,12 @@ h3.multi-tool {
   flex-direction: row;
 }
 .Pomodoro {
-  padding: 10px 0;
-  font-size: 18px;
+  /* padding: 5px 0; */
+  font-size: 16px;
 }
-.Notification{
+/* .Notification{
   padding: 10px;
-}
+} */
 .Notification .ul-noti li{
   font-size: 12px;
   line-height: 26px;
@@ -233,7 +245,7 @@ h3.multi-tool {
   width: 50%;
 }
 #myVideo {
-  width: 759px;
+  width: 100%;
   height: 740px;
   display: block;
 object-fit: cover;
@@ -259,6 +271,10 @@ font-weight: 100;
 }
 .textbus1{
   width: 75%;
+  
+  h3{
+    margin: 0px;
+  }
 }
 .Instant{
   color: black;
@@ -280,55 +296,58 @@ font-weight: 100;
     margin: auto;
 }
 .activation {
-  padding: 20px;
+  padding: 0px 20px;
 }
 .box4{
   img {
       object-fit: cover;
       display: block;
-      width: 1520px;
+      width: 100%;
       height: 700px;
       
     }
 }
 .Automatic{
   
-  margin-top:100px ;
+  /* margin-top:100px ; */
   font-size: 56px;
   font-weight: 100;
   display: flex;
   justify-content: center;
 }
+.box5{
+  width: 100%;
+  /* display: flex; */
+  align-items: center;
+}
 .box5_2 {
+  align-items: center;
   overflow: hidden;
   position: relative;
   left: 284px;
-  top: 10px;
-  width: 1235px;
+
+  width: 80%;
   img{
+    align-items: center;
     border-radius: 0px 0px 0px 0px;
       object-position: center center;
-      width: 1390px;
+      width: 100%;
         display: block;
   }
 
 }
 .box5_1{
-          padding-top: 60px;
+  align-items: center;
+  
         left: 150px;
-        z-index: 1;
+        z-index: 2;
         position: absolute;
         padding: -2px;
         font-size: 18px;
         line-height: 1.8;
         width: 34%;
         height: auto;
-  svg#_Слой_1 {
-    margin: auto;
-    display: block;
-      width: 45px;
-      height: 100%;
-    }
+
   svg {
     margin: auto;
     display: block;
@@ -372,12 +391,14 @@ font-weight: 100;
   padding-bottom: 50px;
 }
 .box6{
-  height: 6 00px;
+  margin-top: -70px;
+  height: 800px;
 }
 .box6_1{
+  
   z-index: 2;
   position: relative;
-  bottom: 280px;
+  bottom: 100px;
  margin: auto;
   width: 85%;
   height: 700px;
@@ -385,7 +406,7 @@ font-weight: 100;
 }
 #myVideo1 {
   border-radius: 20px;
-  width: 1292px;
+  width: 100%;
   height: 700px;
   display: block;
   object-fit: cover;
@@ -453,6 +474,10 @@ h3 {
   font-size: 14px;
   font-weight: 400;
   color: #9999a1;
+
+  p{
+    margin: 0px;
+  }
 }
 .Main1{
   position: absolute;
@@ -464,6 +489,10 @@ h3 {
   font-size: 14px;
   font-weight: 400;
   color: #9999a1;
+  p {
+    line-height: 20px;
+      margin: 0px;
+    }
 }
 .Main2 {
   position: absolute;
@@ -471,10 +500,14 @@ h3 {
   width: 30%;
   left: -90px;
   bottom: 35px; 
-  line-height: 1.7;
+  /* line-height: 1.7; */
   font-size: 14px;
   font-weight: 400;
   color: #9999a1;
+  p {
+    line-height: 20px;
+      margin: 0px;
+    }
 }
 .Apps{
   display: flex;
@@ -493,10 +526,15 @@ h3 {
   width: 30%;
   left: -90px;
   bottom: -80px;
-  line-height: 1.7;
+  /* line-height: 1.7; */
   font-size: 14px;
   font-weight: 400;
   color: #9999a1;
+
+    p {
+      line-height: 20px;
+        margin: 0px;
+      }
 }
 .Main4 {
   position: absolute;
@@ -504,12 +542,13 @@ h3 {
     width: 30%;
     left: 330px;
     bottom: -65px;
-    line-height: 1.7;
+
     font-size: 14px;
     font-weight: 400;
     color: #9999a1;
   
   p{
+    margin: 0px;
     padding-left: 10px;
   }
 }
@@ -519,12 +558,13 @@ h3 {
   width: 30%;
   right: -200px;
   bottom: -115px;
-  line-height: 1.7;
+
   font-size: 14px;
   font-weight: 400;
   color: #9999a1;
 
   p {
+    line-height: 20px;
       padding-left: 10px;
     }
 }
@@ -533,26 +573,31 @@ h3 {
       z-index: 1;
       width:39%;
       right: 137px;
-      top: -30px;
+      top: -60px;
       line-height: 1.7;
       font-size: 14px;
       font-weight: 400;
       color: #9999a1;
 
   p {
+    margin: 0px;
     padding-left: 10px;
   }
 }
 .Main7 {
+
   position: absolute;
   z-index: 1;
   width: 20%;
       right: -190px;
-        top: -17px;
-  line-height: 1.7;
+        top: -30px;
+line-height: 20px;
   font-size: 14px;
-  font-weight: 400;
   color: #9999a1;
+
+  p{
+    margin: 0px;
+  }
   
 }
 .box8{
@@ -624,7 +669,7 @@ h3 {
     flex-direction: row;
 }
 .box10-2{
-  width: 1521px;
+  width: 100%;
     svg {
         margin: auto;
         width: 100%;
@@ -722,13 +767,13 @@ svg {
 .button2-1 {
   margin-right: 20px;
 }
-a#button2-1{
-  display: inline-block;
-    transition: transform 0.3s ease, border-color 0.3s, color 0.3s;
+a.button2-1{
+  display: inline-block  !important;
+  transition: transform 0.3s ease, border-color 0.3s, color 0.3s !important;
 }
-a#button2-1:hover {
+a.button2-1:hover {
 
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
 }
 a#button2-2 {
   display: inline-block;
@@ -742,7 +787,7 @@ a#button2-2:hover {
 .box12{
   display: flex;
   flex-direction: row;
-  width: 1521px;
+  width: 100%;
     height: auto; 
     position: relative;
     video {
@@ -803,7 +848,7 @@ margin-bottom: 20px;
   flex-direction: row;
 }
 .box13{
-  width: 1521px;
+  width: 100%;
   height: auto;
 
   video{
@@ -833,7 +878,7 @@ margin-bottom: 20px;
 width: 40%;
 }
 .box14{
-  width: 1521px;
+  width: 100%;
   height: auto;
 
  img{
@@ -860,7 +905,7 @@ width: 40%;
   }
 }
 .box15{
-  width: 1521px;
+  width: 100%;
   height: auto;
 
   .svgr{
